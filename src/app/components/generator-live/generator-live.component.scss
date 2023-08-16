@@ -1,0 +1,39 @@
+$primary: rgb(6, 175, 0);
+$secondary: rgb(98, 0, 255);
+$grey: rgb(90, 90, 90);
+
+$breakpoint-small: 400px;
+
+div {
+    display: flex;
+    align-items: center;
+
+    > div.circle {
+        width: 10px;
+        height: 10px;
+        flex: 0 0 auto;
+        border-radius: 100%;
+        margin-right: 5px;
+    }
+
+    > small {
+        text-transform: uppercase;
+        font-size: small;
+        font-weight: bold;
+        color: $grey;
+        letter-spacing: 1px;
+    }
+
+    &.live {
+        > div.circle{
+            background-color: red;
+
+        }
+    }
+
+    &.not-live {
+        > div.circle{
+            border: 1px solid $grey;
+        }
+    }
+}

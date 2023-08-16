@@ -1,0 +1,176 @@
+$primary: rgb(6, 175, 0);
+$secondary: rgb(98, 0, 255);
+$grey: rgb(90, 90, 90);
+
+$breakpoint-small: 400px;
+
+html {
+  font-family: "Arial";
+  // * {
+  //   box-sizing: border-box;
+  // }
+}
+
+body {
+  margin: 0;
+}
+
+label.text > input {
+  -webkit-box-ordinal-group: 3;
+  order: 2;
+  width: 100%;
+  padding: 2px 20px;
+  border-radius: 4px;
+  border: 1px solid #5a5a5a;
+}
+
+// label {
+//   > p,
+//   span {
+//     font-weight: bold;
+//     font-size: small;
+//     text-transform: uppercase;
+//     margin: 0 0 5px 0;
+//     color: $grey;
+//   }
+
+//   &:hover,
+//   &:focus-within {
+//     > p,
+//     span {
+//       color: $secondary;
+//     }
+//   }
+
+//   &.text {
+//     display: flex;
+//     flex-direction: column;
+
+//     > input {
+//       order: 2;
+//       width: 100%;
+//       padding: 2px 20px;
+//       border-radius: 4px;
+//       border: 1px solid $grey;
+//     }
+
+//     > p {
+//       order: 1;
+
+//       &.error {
+//         display: none;
+//         order: 3;
+//         color: red;
+//       }
+//     }
+
+//     > input.ng-invalid.ng-touched {
+//       border-color: red;
+
+//       & ~ p {
+//         color: red;
+//       }
+
+//       & ~ p.error {
+//         display: block;
+//       }
+//     }
+
+//     &:hover,
+//     &:focus-within {
+//       > input {
+//         border-color: $secondary;
+//       }
+//     }
+//   }
+
+//   &.checkbox {
+//     display: flex;
+//     align-items: center;
+
+//     div.checkbox {
+//       margin-left: 7px;
+//       width: 36px;
+//       height: 36px;
+//       border: 1px solid $grey;
+//       border-radius: 4px;
+//       position: relative;
+
+//       &:after {
+//         content: "";
+//         display: none;
+//         position: absolute;
+//         border: 1.5px solid;
+//         border-top: none;
+//         border-right: none;
+//         width: 60%;
+//         height: 30%;
+//         transform: rotate(-45deg);
+//         bottom: 45%;
+//         left: 20%;
+//       }
+//     }
+
+//     &:hover {
+//       > div.checkbox {
+//         border-color: $secondary;
+//         &::after {
+//           border-color: darken($secondary, 10%);
+//         }
+//       }
+//     }
+
+//     > input {
+//       display: none;
+//       &:checked ~ div.checkbox {
+//         background: $primary;
+//         &::after {
+//           display: block;
+//           border-color: white;
+//         }
+//       }
+//     }
+//   }
+// }
+
+button {
+  background: $secondary;
+  border: 1px solid $secondary;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 7px 15px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+
+  // &.outline {
+  //   background: none;
+  //   color: $secondary;
+  // }
+}
+
+table {
+  border-collapse: collapse;
+
+  tr {
+    th {
+      border: 1px solid $grey;
+      text-transform: uppercase;
+      color: $grey;
+      font-size: small;
+      padding: 5px 10px;
+    }
+
+    td {
+      padding: 5px 10px;
+      color: black;
+      border: 1px solid $grey;
+      text-align: center;
+    }
+
+    &:nth-child(even) {
+      background-color: #fff;
+    }
+  }
+}

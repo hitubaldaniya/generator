@@ -1,0 +1,33 @@
+$primary: rgb(6, 175, 0);
+$secondary: rgb(98, 0, 255);
+$grey: rgb(90, 90, 90);
+$breakpoint-small: 400px;
+$max-content-width: 600px;
+$content-x-padding: 20px;
+
+main {
+  margin: auto;
+  max-width: $max-content-width;
+  padding: 20px $content-x-padding 50px $content-x-padding;
+}
+
+nav > ul > a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: blueviolet;
+}
+
+
+.menu > nav > ul {
+  background: lightskyblue;
+  padding: 12px;
+  margin: 0;
+}
+
+.menu > nav > ul > a {
+  color: #fff;;
+}
+
+.menu > nav > ul > a:hover {
+  color:blueviolet;
+}

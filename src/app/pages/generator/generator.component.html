@@ -1,0 +1,23 @@
+<div class="row top-ui">
+    <label class="text">
+        <input input_character type="text" placeholder="Character" maxlength="1" [value]="this.prefered_char"  >
+    </label>
+    <label class="grid-button">
+        <button (click)='onToggleGenerator()'>Generate 2D Grid</button>
+    </label>
+</div>
+<table>
+    <tr>
+        <td></td>
+        <td *ngFor="let x of range(this.size.width)" class="coordinate"> {{x}} </td>
+    </tr>
+    <tr *ngFor="let y of range(this.size.height)">
+        <td class="coordinate"> {{y}} </td>
+        <td *ngFor="let x of range(this.size.width)" >
+            {{current_signature?.matrix?.getChar({x:x,y:y})}}
+        </td>
+    </tr>
+</table>
+
+<app-generator-live [live]="(generator_running$ | async)"></app-generator-live>
+<your-code [code]="(current_signature$ | async)?.code"></your-code>
